@@ -8,8 +8,27 @@ body {
 	/* width:1200px; */
 }
 
-.header {}
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
 
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.justify-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.header {}
+*{
+	box-sizing: border-box;
+}
 .title-wrap {
 	display: flex;
 	position: relative;
@@ -69,6 +88,7 @@ body {
 	line-height: 25px;
 	text-align: center;
 	z-index: 2;
+	cursor: pointer;
 }
 
 .tabpane+.tabpane {
@@ -468,4 +488,315 @@ body {
 	font-weight: 400;
 	color: #333333;
 	line-height: 12px;
+}
+
+
+
+.fourth {
+	font-family: Adobe Heiti Std R;
+	height: 199px;
+	margin: 65px 0 68px 90px;
+}
+
+
+.fourth-intro {
+	padding-right: 66px;
+}
+
+.fourth-title {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 16px;
+	/* 调整文字和图片之间的间距 */
+	align-items: center;
+}
+
+.fourth-title-content {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding-top: 42px;
+}
+
+.fourth-title-content_1 {
+	width: 113px;
+	height: 19px;
+	font-size: 24px;
+	font-family: "Adobe Heiti Std";
+	font-weight: normal;
+	color: #333333;
+	line-height: 36px;
+}
+
+.fourth-title-content_2 {
+	height: 23px;
+	font-size: 23px;
+	font-family: "Adobe Heiti Std";
+	font-weight: normal;
+	color: #333333;
+	line-height: 34px;
+	margin-top: 8px;
+}
+
+.fourth-title-img {
+	margin: 55px 43px 0 0;
+}
+
+.fourth-title-img img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+.fourth-intro-detail {
+	width: 228px;
+	height: 67px;
+	font-size: 12px;
+	font-family: Adobe Heiti Std;
+	font-weight: normal;
+	color: #333333;
+	line-height: 18px;
+	margin-top: 37px;
+
+}
+
+.designer-detail {
+	width: 235.2px;
+	margin-right: 13px;
+}
+
+.designer-img {
+	width: 235.2px;
+	height: 135.6px;
+	overflow: hidden;
+}
+
+.designer-img>img {
+	/* max-width: 100%; */
+	/* 图片的最大宽度为其父元素（即 div）的宽度 */
+	/* height: auto; */
+	/* 高度自动，保持图片的原有比例 */
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	/* 这将使图片填满容器，同时保持其比例 */
+}
+
+
+.fourth-click {
+	padding-top: 17px;
+	/* width: 80px; */
+	height: 13px;
+	font-size: 12px;
+	font-family: Adobe Heiti Std;
+	font-weight: normal;
+	color: #FD5000;
+	line-height: 13px;
+	/* 调整行高与 div 的高度一致 */
+	display: flex;
+	/* 使用 flexbox 来对齐元素 */
+	align-items: center;
+	/* 垂直居中对齐元素 */
+	cursor: pointer;
+}
+
+.fourth-click img {
+	vertical-align: middle;
+	/* 使图像垂直居中对齐 */
+	padding-left: 3px;
+	position: relative;
+	top: 1px;
+}
+
+.designer-name p {
+	height: 11px;
+	font-size: 11px;
+	font-family: Adobe Heiti Std;
+	font-weight: normal;
+	color: #333333;
+	line-height: 14px;
+	margin-top: 15px;
+}
+
+.designer-name span {
+	height: 10px;
+	font-size: 10px;
+	font-family: RobotoCondensed;
+	font-weight: 400;
+	color: #333333;
+	line-height: 14px;
+}
+
+
+/* 第5行 */
+.fifth {
+	display: flex;
+	height: 301px;
+	margin-bottom: 16px;
+	position: relative;
+}
+.news {
+	position: absolute;
+	left: 188px;
+	top:120px;
+	font-size: 38px;
+	font-family: Myriad Pro;
+	font-weight: 400;
+	color: #49ADA0;
+	line-height: 11px;
+	text-shadow: 0px 5px 5px rgba(0,0,0,0.75);
+	-webkit-text-stroke: 2px #FFFFFF;
+	text-stroke: 2px #FFFFFF;
+}
+.fifth .intro-text {
+	position: absolute;
+	left: 246px;
+	top:160px;
+	font-size: 41px;
+	font-family: Adobe Heiti Std;
+	font-weight: normal;
+	color: #49ADA0;
+	line-height: 12px;
+}
+.fifth-left {
+	width: 371px;
+	height: 100%;
+background: #D4EDBF;
+}
+.fifth-right {
+	display: flex;
+	flex:1;
+	background: #E5E9DF;
+	padding-left:81px ;
+}
+.fifth-right-content {
+	display: flex;
+	flex-direction: column;
+	padding-top: 30px;
+	width: 40%;
+
+}
+.fifth-right-content  img {
+	/* width: 296px; */
+	max-width: 100%;
+	height: 144px;
+}
+.fifth-right-content .intro {
+	font-size: 19px;
+	font-family: Adobe Heiti Std;
+	font-weight: normal;
+	color: #333333;
+	line-height: 19px;
+}
+.fifth-right-content .date {
+	font-size: 10px;
+	font-family: Myriad Pro;
+	font-weight: 400;
+	color: #6A6969;
+	line-height: 19px;
+	margin:24px 0 15px;
+}
+.fifth-right-content  .more {
+	/* text-align: right; */
+	font-size: 10px;
+font-family: Adobe Heiti Std;
+font-weight: normal;
+color: #FD5000;
+line-height: 11px;
+margin-top: 22px;
+text-align: right;
+cursor: pointer;
+}
+
+
+/* footer */
+.footer {
+	display: flex;
+	height: 307px;
+background: #EBB240;
+padding: 73px 10% 42px 15%;
+justify-content: space-between;
+}
+.first-line {
+	width: 266px;
+	/* margin-left: 10%; */
+	position: relative;
+}
+.english {
+	font-size: 25px;
+font-family: Adobe Heiti Std;
+font-weight: normal;
+color: #3B3B3B;
+line-height: 36px;
+}
+.compony {
+	margin-top: 16px;
+	font-size: 19px;
+font-family: Adobe Heiti Std;
+font-weight: normal;
+color: #3B3B3B;
+line-height: 29px;
+}
+.site {
+	margin-top:90px;
+	font-size: 14px;
+font-family: Adobe Heiti Std;
+font-weight: normal;
+color: #3B3B3B;
+line-height: 21px;
+position: absolute;
+bottom: 0;
+}
+
+.second-line {
+width: 214px;
+}
+.contact {
+	font-size: 18px;
+font-family: 缁忓吀绮楅粦绠€;
+font-weight: 400;
+color: #3B3B3B;
+line-height: 28px;
+}
+.seperate {
+	width: 100%;
+	height: 3px;
+	background-color: #fff;
+}
+.phone {
+	font-size: 15px;
+font-family: Adobe Heiti Std;
+font-weight: normal;
+color: #3B3B3B;
+line-height: 24px;
+}
+.third-line {
+display: flex;
+}
+
+.code {
+	width: 124px;
+	height: 124px;
+	background-color: #fff;
+}
+.way  .desc {
+	font-size: 14px;
+	font-family: Adobe Heiti Std;
+	font-weight: normal;
+	color: #3B3B3B;
+	line-height: 21px;
+	margin-top: 8px;
+}
+.way + .way {
+	margin-left: 26px;
+}
+
+
+
+.example {
+	min-height: calc(100vh - 483px);
+	display: none;
+}
+.example.show {
+	display: block;
 }
